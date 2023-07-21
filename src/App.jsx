@@ -16,6 +16,7 @@ import Mygigs from './pages/mygigs/Mygigs';
 import Messages from './pages/messages/Messages';
 import Message from './pages/message/Message';
 import Navbar from './Components/navbar/Navbar';
+import Add from './pages/add/Add';
 
 const App = () => {
   const Layout = () => {
@@ -61,6 +62,10 @@ const App = () => {
         {
           path: '/message/:id',
           element: <Message />,
+        },
+        {
+          path: '/add',
+          element: <Add />,
         },
       ],
     },
